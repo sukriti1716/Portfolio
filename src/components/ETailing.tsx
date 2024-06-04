@@ -6,7 +6,7 @@ const ETailing = () => {
       <>
           <div style={{backgroundColor:"#DFF5FF",marginTop:"4rem",height:"85.7dvh",display:"flex",justifyContent:"space-evenly",alignItems:"center",gap:"1rem"}}>
               <div className="img">
-                  <img src="E-Tailingpic.jpeg" alt="" height={"500rem"} width={"500rem"} style={{borderRadius:"10%",border:"1px solid black", animation: "scaleInOut 3s ease-in-out infinite"}}/>
+                  <img src="E-Tailingpic.jpeg" alt="" height={"300rem"} width={"500rem"} style={{borderRadius:"10%",border:"1px solid black", animation: "scaleInOut 3s ease-in-out infinite",objectFit:"cover"}}/>
               </div>
               <div className="content" style={{display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column",gap:"1rem",backgroundColor:"#3C5B6F",padding:"2rem",borderRadius:"10%",color:"white"}}>
                   <div>

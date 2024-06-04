@@ -1,5 +1,6 @@
 import { Button } from "@mui/material"
 import Footer from "./Footer"
+import { Link } from "react-router-dom"
 const Home = () => {
   return (
     <>
@@ -13,7 +14,7 @@ const Home = () => {
                     <p>Explore my projects and feel free to contact me for collaboration or inquiries!</p> 
                 </div>
                 <div>
-                    <Button variant="contained">Contact Me</Button>
+                    <Link to="/contact"><Button variant="contained">Contact Me</Button></Link>
                 </div>
             </div>
             <div className="pic">

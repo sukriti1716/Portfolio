@@ -37,8 +37,7 @@ const Contact = () => {
                 </div>
 
                 <div style={{ marginTop: '1rem' }}>
-                    <Link to="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" style={{ margin: '0 1rem'}}><CiLinkedin size="2rem" style={{color:"white"}}/></Link>
-                    <Link to="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" style={{ margin: '0 1rem' }}><FaTwitter size="2rem" style={{color:"white"}}/></Link>
+                    <Link to="https://www.linkedin.com/in/sukriti-bhatia-72ab8a221?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" style={{ margin: '0 1rem'}}><CiLinkedin size="2rem" style={{color:"white"}}/></Link>
                     <Link to="https://github.com/sukriti1716" target="_blank" rel="noopener noreferrer" style={{ margin: '0 1rem'}}><FaGithub size="2rem" style={{color:"white"}} /></Link>
                 </div>
             </div>

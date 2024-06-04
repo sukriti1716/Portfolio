@@ -4,13 +4,10 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Aboutme from './components/Aboutme';
-import Footer from './components/Footer';
 import Projects from"./components/Projects"
-import ChatappPage from './components/ChatappPage';
-import Portfolio from './components/Portfolio';
-import ETailing from './components/ETailing';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
+import ProjectData from './components/ProjectData';
 function App() {
   return (
     <div >
@@ -23,11 +20,9 @@ function App() {
             <Route path="/about" element={<Aboutme/>}/>
             <Route path="/project" element={<Projects/>}/>
             <Route path="/home" element={<Home/>}/>
-            <Route path="/chatapp-page" element={<ChatappPage/>}/>
-            <Route path="/E-Tailing" element={<ETailing/>}/>
-            <Route path="/portfolio" element={<Portfolio/>}/>
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/experience" element={<Experience/>}/>
+            <Route path="/projects/:selectedproject" element={<ProjectData />} />
         </Route>
        
       </Routes>
