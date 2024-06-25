@@ -18,15 +18,25 @@ const Projects = () => {
                 <span><h1 style={{backgroundColor:"#153448",color:"white",padding:"0.6rem"}}>MY PROJECTS</h1></span>
             </div>
             <div className="multiproject"style={{display:"flex",flexDirection:"row",gap:"2rem",padding:"2rem",backgroundColor:"#99aab5",color:"white"}}>
-                <div className="chatapp" style={{borderRadius:"0%",objectFit:"cover"}} >
-                    <img src="chatapp-pic.png" alt="" height={"310rem"} width={"350rem"} style={{borderRadius:"10%"}} onClick={()=>handleClick('/projects/chatapp')}/>
+                <div>
+                    <h1 style={{textAlign:"center",color:"white",marginBottom:"1rem",backgroundColor:"#3C5B6F"}}>Chat-App</h1>
+                    <div className="chatapp" style={{borderRadius:"0%",objectFit:"cover"}} >
+                        <img src="chatapp-pic.png" alt="" height={"310rem"} width={"350rem"} style={{borderRadius:"10%"}} onClick={()=>handleClick('/projects/chatapp')}/>
+                    </div>
                 </div>
-                <div className="e-tailing"  style={{borderRadius:"0%",objectFit:"cover"}}>
-                    <img src="E-Tailingpic.png" alt="" height={"310rem"} width={"350rem"} style={{borderRadius:"10%"}} onClick={()=>handleClick('/projects/etailing')}/> 
+                <div>
+                    <h1 style={{textAlign:"center",color:"white",marginBottom:"1rem",backgroundColor:"#3C5B6F"}}>E-Tailing</h1>
+                    <div className="e-tailing"  style={{borderRadius:"0%",objectFit:"cover"}}>
+                        <img src="E-Tailingpic.png" alt="" height={"310rem"} width={"350rem"} style={{borderRadius:"10%"}} onClick={()=>handleClick('/projects/etailing')}/> 
+                    </div>
                 </div>
-                <div className="portfolio"  style={{borderRadius:"0%",objectFit:"cover"}}>
-                    <img src="portfoliopic.jpeg" alt="" height={"310rem"} width={"350rem"} style={{borderRadius:"10%"}} onClick={()=>handleClick('/projects/portfolio')}/>
+                <div>
+                    <h1 style={{textAlign:"center",color:"white",marginBottom:"1rem",backgroundColor:"#3C5B6F"}}>PortFolio</h1>
+                    <div className="portfolio"  style={{borderRadius:"0%",objectFit:"cover"}}>
+                        <img src="portfoliopic.jpeg" alt="" height={"310rem"} width={"350rem"} style={{borderRadius:"10%"}} onClick={()=>handleClick('/projects/portfolio')}/>
+                    </div>
                 </div>
+                
             </div>
         </div>
 
