@@ -9,6 +9,7 @@ interface Project {
     technologies: string[];
     sourceCodeLink: string;
     disc:string;
+    link:string;
   }
 
 const projects:{ [key: string]: Project }={
@@ -17,21 +18,24 @@ const projects:{ [key: string]: Project }={
         imgsrc: "chatapp-pic.png",
         technologies: ["ReactJs", "JavaScript", "TypeScript", "Socket.io","OpenAI using Gemini", "MongoDB", "Validation & Authentication", "Hosted on AWS"],
         sourceCodeLink: "https://github.com/sukriti1716/Talk-Trek",
-        disc:"A MERN Chat-App where users can chat with their friends and use a chatbot created using Gemini and ask questions freely "
+        disc:"A MERN Chat-App where users can chat with their friends and use a chatbot created using Gemini and ask questions freely ",
+        link:"https://talktrek.sukritibhatia13.com"
       },
       etailing: {
         name: "E-Tailing",
         imgsrc: "E-Tailingpic.png",
         technologies: ["NodeJS", "EJS", "Session & Cookies", "MongoDB", "Validation & Authentication", "Hosted on AWS"],
         sourceCodeLink: "https://github.com/sukriti1716/E-Tailing",
-        disc:"A MERN E-Commerce App where users can sell and buy products online "
+        disc:"A MERN E-Commerce App where users can sell and buy products online ",
+        link:"https://etailing.sukritibhatia13.com"
       },
       portfolio: {
         name: "Portfolio",
         imgsrc: "portfoliopic.jpeg",
         technologies: ["NodeJS", "ReactJs", "TypeScript", "JavaScript", "Hosted on AWS"],
         sourceCodeLink: "https://github.com/sukriti1716/Portfolio",
-        disc:"A Front-End Portfolio project displaying my Projects ,Contact Details, Work Experience and About-Me"
+        disc:"A Front-End Portfolio project displaying my Projects ,Contact Details, Work Experience and About-Me",
+        link:"https://sukritibhatia13.com"
       },
 
     }
@@ -80,7 +84,7 @@ const ProjectData = () => {
   return (
     
     <>
-        {isloaded && (<div style={{backgroundColor:"#DFF5FF",marginTop:"4rem",height:"85.7dvh",display:"flex",justifyContent:"space-evenly",alignItems:"center",gap:"1rem"}}>
+        {isloaded && (<div style={{backgroundColor:"#DFF5FF",marginTop:"4rem",height:"85.7dvh",display:"flex",justifyContent:"space-evenly",alignItems:"center",gap:"0rem"}}>
         <img src={imaging} alt="" />
             <div style={{display:"flex",justifyContent:"center",flexDirection:"column",alignItems:"center",gap:"1rem"}}>
               <div className="image" >
@@ -102,7 +106,7 @@ const ProjectData = () => {
                 </div>
                 <div className="buttons" style={{display:"flex",justifyContent:"space-between",gap:"2rem",flexDirection:"row"}}>
                     {project.sourceCodeLink && <Button href={project.sourceCodeLink} variant="contained">Source Code</Button>}
-                    <Button variant="contained">Open</Button>
+                    <Button href={project.link} variant="contained">Open</Button>
                 </div>
             </div>
       </div>)
