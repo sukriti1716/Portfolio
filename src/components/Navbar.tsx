@@ -9,12 +9,12 @@ const Navbar = () => {
   return (
     <>
       <div>
-            <Box >
+            <Box className="navbox" height={"5dvh"}>
             {/* rgba(238,247,255,0.32) */}
                 <AppBar sx={{ backgroundColor: '#3C5B6F',zIndex:2}} >
                     <Toolbar>
                     <Typography variant="h6" sx={{ flexGrow: 1 ,color:"white"}}>PORTFOLIO</Typography >
-                    <div style={{display:"flex",gap:"1rem"}}>
+                    <div className="navlinks" style={{display:"flex",gap:"1rem"}}>
                         <Link to="/"><Button variant="text" sx={{color:"white"}} >Home</Button></Link> 
                         <Link to="/about"><Button variant="text" sx={{color:"white"}} >About</Button> </Link>
                         <Link to="/experience"><Button variant="text" sx={{color:"white"}} >Experience</Button> </Link>
