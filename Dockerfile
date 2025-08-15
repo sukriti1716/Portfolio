@@ -12,4 +12,4 @@ RUN npm run build
 # DEPLOY STAGE
 FROM nginx:stable-alpine
 
-COPY --from=builder /app/dist /usr/share/nginx/html
+COPY --from=builder /app/build /usr/share/nginx/html
